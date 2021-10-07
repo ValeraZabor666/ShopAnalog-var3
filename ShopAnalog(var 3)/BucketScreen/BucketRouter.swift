@@ -15,7 +15,7 @@ protocol BucketRouterProtocol {
     var entry: EntryPoint2? { get }
     static func start() -> BucketRouterProtocol
     
-    func openTarget()
+    func openTarget(data: [Good], index: Int)
     func openBucket()
 }
 
@@ -42,16 +42,17 @@ class BucketRouter: BucketRouterProtocol {
         return router
     }
     
-    func openTarget() {
+    func openTarget(data: [Good], index: Int) {
         let vc = TargetRouter.start()
         let destVc = vc.entry
+        AllGoods.sharedData.goods = data
+        OneGood.sharedData.count = index
         entry?.navigationController?.pushViewController(destVc!, animated: true)
     }
     
     func openBucket() {
         let vc = GalleryRouter.start()
         let destVc = vc.entry
-        print(AllData.sharedData.goods.count)
         entry?.navigationController?.pushViewController(destVc!, animated: true)
     }
 }

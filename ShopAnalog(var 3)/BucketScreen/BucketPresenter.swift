@@ -17,7 +17,7 @@ protocol BucketPresenterProtocol {
     func sortByWeight(data: [GoodBucket])
     func getGoods()
     func updateGoods(data: [GoodBucket])
-    func openTarget()
+    func openTarget(data: [Good], index: Int)
 }
 
 class BucketPresenter: BucketPresenterProtocol {
@@ -46,7 +46,7 @@ class BucketPresenter: BucketPresenterProtocol {
         view?.setBucket(data: (interactor?.sortByPrice(data: data))!)
     }
     
-    func openTarget() {
-        router?.openTarget()
+    func openTarget(data: [Good], index: Int) {
+        router?.openTarget(data: data, index: index)
     }
 }

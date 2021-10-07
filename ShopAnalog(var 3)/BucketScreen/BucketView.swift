@@ -146,7 +146,12 @@ class BucketViewController: UIViewController, BucketViewControllerProtocol, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.openTarget()
+        var data: [Good] = []
+        for good in goods {
+            data.append(good.good)
+        }
+        
+        presenter?.openTarget(data: data, index: indexPath.row)
     }
     
 }
