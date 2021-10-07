@@ -29,6 +29,7 @@
 		0474031D270E795C00EBEA5A /* TargetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04740319270E795C00EBEA5A /* TargetPresenter.swift */; };
 		0474031E270E795C00EBEA5A /* TargetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474031A270E795C00EBEA5A /* TargetRouter.swift */; };
 		0474031F270E795C00EBEA5A /* TargetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474031B270E795C00EBEA5A /* TargetInteractor.swift */; };
+		0474033D270EE41500EBEA5A /* TargetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474033C270EE41500EBEA5A /* TargetCollectionViewCell.swift */; };
 		1EA881779915F874A6A342A9 /* Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD7756C066FDE3970ED421 /* Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests.framework */; };
 		74A17E2261FF148E0A0FFEAC /* Pods_ShopAnalog_var_3_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852BEF1EB66F50D38C86B252 /* Pods_ShopAnalog_var_3_Tests.framework */; };
 		CE88F62360B4576AE4F46158 /* Pods_ShopAnalog_var_3_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F7C364698B3E6BB92613E9 /* Pods_ShopAnalog_var_3_.framework */; };
@@ -80,6 +81,7 @@
 		04740319270E795C00EBEA5A /* TargetPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetPresenter.swift; sourceTree = "<group>"; };
 		0474031A270E795C00EBEA5A /* TargetRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetRouter.swift; sourceTree = "<group>"; };
 		0474031B270E795C00EBEA5A /* TargetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetInteractor.swift; sourceTree = "<group>"; };
+		0474033C270EE41500EBEA5A /* TargetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A3ACD2203E790356D142BAB /* Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests.release.xcconfig"; path = "Target Support Files/Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests/Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests.release.xcconfig"; sourceTree = "<group>"; };
 		852BEF1EB66F50D38C86B252 /* Pods_ShopAnalog_var_3_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopAnalog_var_3_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CD7756C066FDE3970ED421 /* Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				04740318270E795C00EBEA5A /* TargetView.swift */,
+				0474033C270EE41500EBEA5A /* TargetCollectionViewCell.swift */,
 				0474031B270E795C00EBEA5A /* TargetInteractor.swift */,
 				04740319270E795C00EBEA5A /* TargetPresenter.swift */,
 				0474031A270E795C00EBEA5A /* TargetRouter.swift */,
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047402CB270D9D8000EBEA5A /* GalleryPresenter.swift in Sources */,
+				0474033D270EE41500EBEA5A /* TargetCollectionViewCell.swift in Sources */,
 				0474031E270E795C00EBEA5A /* TargetRouter.swift in Sources */,
 				0474031D270E795C00EBEA5A /* TargetPresenter.swift in Sources */,
 				047402FE270DF16A00EBEA5A /* BucketPresenter.swift in Sources */,

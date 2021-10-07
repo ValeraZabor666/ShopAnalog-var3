@@ -17,7 +17,7 @@ protocol GalleryPresenterProtocol {
     func sortByWeight(data: [Good])
     func getGoods()
     func updateGoods(data: [Good])
-    func openTarget()
+    func openTarget(data: [Good], index: Int)
     
 }
 
@@ -47,7 +47,7 @@ class GalleryPresenter: GalleryPresenterProtocol {
         view?.setGallery(data: (interactor?.sortByPrice(data: data))!)
     }
     
-    func openTarget() {
-        router?.openTarget()
+    func openTarget(data: [Good], index: Int) {
+        router?.openTarget(data: data, index: index)
     }
 }

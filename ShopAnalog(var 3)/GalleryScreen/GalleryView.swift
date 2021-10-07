@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RealmSwift
 
 protocol GalleryViewControllerProtocol {
     var presenter: GalleryPresenterProtocol? { get set }
@@ -117,6 +116,6 @@ class GalleryViewController: UIViewController, GalleryViewControllerProtocol, UI
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.openTarget()
+        presenter?.openTarget(data: goods, index: indexPath.row)
     }
 }

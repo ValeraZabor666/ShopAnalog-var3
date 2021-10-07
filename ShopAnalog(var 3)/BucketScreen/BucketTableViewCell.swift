@@ -181,6 +181,7 @@ class BucketTableViewCell: UITableViewCell {
                 if let data = data {
                     DispatchQueue.main.async() {
                         self!.photo.image = UIImage(data: data)!
+                        self?.imageToCache(data: data, response: response!)
                     }
                 }
             }

@@ -1,18 +1,15 @@
 //
-//  GalleryTableViewCell.swift
-//  endlessgallery
+//  TargetCollectionViewCell.swift
+//  ShopAnalog(var 3)
 //
-//  Created by Captain Kidd on 28.08.2021.
+//  Created by Captain Kidd on 07.10.2021.
 //
 
 import UIKit
-import SnapKit
 
-
-class GalleryTableViewCell: UITableViewCell {
-
-    static let id = "GalleryCell"
+class TargetCollectionViewCell: UICollectionViewCell {
     
+    static let id = "TargetCell"
     private var element: Good?
     
     private var photo: UIImageView = {
@@ -66,9 +63,9 @@ class GalleryTableViewCell: UITableViewCell {
         return button
     }()
     
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.backgroundColor = .white
         contentView.addSubview(photo)
         contentView.addSubview(priceLabel)
         contentView.addSubview(weightLabel)
@@ -159,7 +156,8 @@ class GalleryTableViewCell: UITableViewCell {
     
     private func setConstraints() {
         photo.snp.makeConstraints { maker in
-            maker.top.left.bottom.equalTo(contentView).inset(10)
+            maker.left.equalTo(contentView).inset(10)
+            maker.top.bottom.equalTo(contentView).inset(100)
             maker.width.equalTo(150)
         }
         
@@ -185,29 +183,17 @@ class GalleryTableViewCell: UITableViewCell {
         }
         
         nameLabel.snp.makeConstraints { maker in
-            maker.top.equalTo(contentView).inset(10)
+            maker.top.equalTo(contentView).inset(100)
             maker.left.equalTo(photo).inset(160)
             maker.right.equalTo(bucketButton).inset(-10)
             maker.height.equalTo(50)
         }
         
         bucketButton.snp.makeConstraints { maker in
-            maker.top.right.equalTo(contentView).inset(10)
+            maker.right.equalTo(contentView).inset(10)
+            maker.top.equalTo(contentView).inset(100)
             maker.width.height.equalTo(50)
         }
     }
-}
-
-extension String {
-    var htmlToAttributedString: NSAttributedString? {
-        guard let data = data(using: .utf8) else { return nil }
-        do {
-            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue], documentAttributes: nil)
-        } catch {
-            return nil
-        }
-    }
-    var htmlToString: String {
-        return htmlToAttributedString?.string ?? ""
-    }
+    
 }

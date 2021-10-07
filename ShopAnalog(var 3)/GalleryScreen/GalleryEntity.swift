@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RealmSwift
 
 struct Good: Codable {
     var image: String
@@ -28,3 +27,22 @@ class AllData {
     
     var goods: [GoodBucket] = []
 }
+
+class AllGoods {
+    static let sharedData = AllGoods()
+    
+    var goods: [Good] = []
+}
+
+class AllGoodsInBucket {
+    static let sharedData = AllGoodsInBucket()
+    
+    var goods: [Good] = []
+}
+
+class OneGood {
+    static let sharedData = OneGood()
+    
+    var count = 0
+}
+

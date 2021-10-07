@@ -15,7 +15,7 @@ protocol GalleryRouterProtocol {
     var entry: EntryPoint? { get }
     static func start() -> GalleryRouterProtocol
     
-    func openTarget()
+    func openTarget(data: [Good], index: Int)
     func openBucket()
 }
 
@@ -42,9 +42,11 @@ class GalleryRouter: GalleryRouterProtocol {
         return router
     }
     
-    func openTarget() {
+    func openTarget(data: [Good], index: Int) {
         let vc = TargetRouter.start()
         let destVc = vc.entry
+        AllGoods.sharedData.goods = data
+        OneGood.sharedData.count = index
         entry?.navigationController?.pushViewController(destVc!, animated: true)
     }
     

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7D2FBE53A7195E42BA6C0B7E40872DEA"
-               BuildableName = "Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests.framework"
+               BuildableName = "Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests.framework"
                BlueprintName = "Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

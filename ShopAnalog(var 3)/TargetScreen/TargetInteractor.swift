@@ -12,7 +12,7 @@ protocol TargetInteractorProtocol {
 
 }
 
-class TargetInteractor: TargetInteractorProtocol{
+class TargetInteractor: TargetInteractorProtocol {
     
     
     var presenter: TargetPresenterProtocol?
