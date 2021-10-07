@@ -1,0 +1,6 @@
+framework module Pods_ShopAnalog_var_3__ShopAnalog_var_3_UITests {
+  umbrella header "Pods-ShopAnalog(var 3)-ShopAnalog(var 3)UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
