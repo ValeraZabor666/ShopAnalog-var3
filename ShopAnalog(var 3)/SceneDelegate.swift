@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let baseScreenRouter = GalleryRouter.start()
+        let baseScreenRouter = BaseRouter.start()
         let initialVC = baseScreenRouter.entry
         
         let window = UIWindow(windowScene: windowScene)

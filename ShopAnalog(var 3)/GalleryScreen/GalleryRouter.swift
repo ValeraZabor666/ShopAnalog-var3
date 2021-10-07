@@ -53,7 +53,6 @@ class GalleryRouter: GalleryRouterProtocol {
     func openBucket() {
         let vc = BucketRouter.start()
         let destVc = vc.entry
-        print(AllData.sharedData.goods.count)
         entry?.navigationController?.pushViewController(destVc!, animated: true)
     }
 }
